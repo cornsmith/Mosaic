@@ -41,9 +41,11 @@ def process_image(image_name, colours, thumbs, thumbsize):
         for y in range(img_data.shape[1]):
             _, nn_idx = kdt.query(img_data[x, y, :], k=3)
             thumb_img = thumbs[random.choice(nn_idx)] # TODO: change to distance-weighted probabilities
-            x1 = (x * thumbsize)
+            x_offset = int((thumbsize - thumb_img.shape[0]) / 2)
+            y_offset = int((thumbsize - thumb_img.shape[1]) / 2)
+            x1 = (x * thumbsize) + x_offset
             x2 = x1 + thumb_img.shape[0]
-            y1 = (y * thumbsize)
+            y1 = (y * thumbsize) + y_offset
             y2 = y1 + thumb_img.shape[1]
             new_image[x1:x2, y1:y2, :] = thumb_img
     return new_image
