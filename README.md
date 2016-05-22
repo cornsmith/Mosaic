@@ -14,8 +14,8 @@ Emojify
 ![girl output](examples/girl-emoji.jpg?raw=true)
 
 Fruits
-![fruits input](examples/fruits.jpg?raw=true)
-![fruits output](examples/fruits-fruits.jpg?raw=true)
+![fruit salad input](examples/fruit.jpg?raw=true)
+![fruit salad output](examples/fruit-fruit.jpg?raw=true)
 
 ## Usage
 1. Build tile set
