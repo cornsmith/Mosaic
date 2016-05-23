@@ -9,11 +9,11 @@ Turn a picture into a mosaic where the tiles are:
 - a preset shape (future release)  
 
 ## Examples
-Emojify
+### Emojify
 ![girl input](examples/girl.jpg?raw=true)
 ![girl output](examples/girl-emoji.jpg?raw=true)
 
-Fruits
+### Fruits
 ![fruit salad input](examples/fruit.jpg?raw=true)
 ![fruit salad output](examples/fruit-fruit.jpg?raw=true)
 
