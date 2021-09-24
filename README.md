@@ -22,7 +22,7 @@ Turn a picture into a mosaic where the tiles are:
 2. Process image
 
 ### 1. Build tile set
-`python tiles.py dir_name tile_file max_pixel`  
+`python tiles.py dir_name tile_file [max_pixel]`  
 
 The tile file is a numpy zip file consisting of the data of each image (RGBA as numpy array), main colour of each image, and the maximum height / width of the tile set.
 
@@ -35,4 +35,5 @@ Takes the input file and creates a mosaic using the tile file and saves as the o
 - Python 3.x  
 - numpy  
 - scipy  
-- PIL  
+- pillow  
+- imageio  

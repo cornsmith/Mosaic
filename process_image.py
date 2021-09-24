@@ -15,7 +15,7 @@ import numpy as np
 import random
 from PIL import Image
 from scipy.spatial import KDTree
-from scipy.misc import imsave
+import imageio
 
 MAX_RES = 125
 
@@ -69,4 +69,5 @@ if __name__ == "__main__":
     new_image = process_image(in_file, colours, thumbs, thumbsize)
 
     print('Saving new image...')
-    imsave(out_file, new_image)
+    # imsave(out_file, new_image)
+    imageio.imwrite(out_file, new_image)
